@@ -1,0 +1,43 @@
+.hubspot-post-grid-container .post-grid-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .hubspot-post-grid-container.gird-1 .post-grid{
+    width: 100%;
+  }
+  .hubspot-post-grid-container.gird-2 .post-grid{
+    width: 50%;
+  }
+  .hubspot-post-grid-container.gird-3 .post-grid{
+    width: 33.33%;
+  }
+  .hubspot-post-grid-container.gird-4 .post-grid{
+    width: 25%;
+  }
+}
+
+.post-grid{
+  padding: 10px;
+}
+
+.post-grid .entry-thumbnail{
+  position: relative;
+  line-height: 0;
+}
+.post-grid .entry-thumbnail .entry-overlay{
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.post-grid .entry-thumbnail .entry-overlay i{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0;
+}
+.post-grid .entry-thumbnail .entry-overlay a{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
